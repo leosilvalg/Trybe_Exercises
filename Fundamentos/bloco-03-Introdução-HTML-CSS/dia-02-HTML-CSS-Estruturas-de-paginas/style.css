@@ -1,0 +1,42 @@
+/*Modificando o h1 para sans-serif*/
+h1{
+    font-family: sans-serif;
+}
+
+/*Modificando o font-weight do parágrafo*/
+
+p{
+    font-weight:600;
+    /*Modificando o tamanho do parágrafo*/
+    font-size: 3em;
+}
+
+/*Modificando o font-size do body*/
+
+body{
+    font-size: 16px;
+}
+
+/*Font-style, line-height, text-align, text-decoration*/
+
+ul{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    line-height: 1.5;
+    text-align:justify;
+    text-decoration:underline;
+}
+
+/*Trocando a cor de fundo de cada item*/
+
+.amarelo{
+    background-color: yellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.marrom{
+    background-color: brown;
+}
