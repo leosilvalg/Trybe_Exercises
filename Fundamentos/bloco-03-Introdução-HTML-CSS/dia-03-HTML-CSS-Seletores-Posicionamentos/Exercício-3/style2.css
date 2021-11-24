@@ -1,0 +1,57 @@
+div:hover{
+    border: 2px solid black;
+}
+/* Colocando um cor para cada div*/
+
+    div:nth-last-of-type(1){
+        background-color: blue;
+    }
+
+    div:nth-last-of-type(2){
+        background-color: green;
+    }
+
+    div:nth-last-of-type(3){
+        background-color: aqua;
+    }
+
+    div:nth-last-of-type(4){
+        background-color: beige;
+    }
+
+    div:nth-last-of-type(5){
+        background-color: violet;
+    }
+
+/* Coloncado uma cor para cada h3*/
+
+    div:nth-last-of-type(1) > h3{
+        color: green;
+    }
+
+    div:nth-last-of-type(2) >h3{
+        color: black;
+    }
+
+    div:nth-last-of-type(3) > h3{
+        color: red;
+    }
+
+    div:nth-last-of-type(4) > h3{
+        color: darkmagenta;
+    }
+
+    div:nth-last-of-type(5) > h3{
+        color: orangered;
+    }
+
+    /*Div 3 maior que as outras */
+
+    div:nth-last-of-type(3){
+        height: 80px;
+    }
+
+    /*Deixando as tags h3 impares em italico*/
+    div:nth-last-of-type(odd) h3{
+        font-style: italic;
+    }
