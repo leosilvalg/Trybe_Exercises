@@ -1,0 +1,26 @@
+body{
+    background-color: #5BF5BF;
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    font-family: monospace;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+section {
+    background-color: #50D8FA;
+}
+
+.links {
+    text-align: center;
+    color: aliceblue;
+}
+
+header{
+    text-align: center;
+}
