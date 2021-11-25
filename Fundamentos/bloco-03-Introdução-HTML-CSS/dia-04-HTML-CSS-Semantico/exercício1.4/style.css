@@ -70,7 +70,7 @@ header ul li a{
     text-align: center;
 }
 
-h3{
+h2{
     font-size: 25px;
     margin-left: 25px;
     border-radius: 20px;
@@ -94,10 +94,13 @@ h3{
 }
 
  #tabela {
+    
     justify-content: center;
-    display:flex;
+    display: flex;
     background-color: #F7B733;
     border-radius: 20px;
+    max-width: 30%;
+    margin-left: 35%;
 }
 
 #tabela tr{
@@ -105,7 +108,7 @@ h3{
 }
 
 
-h4{
+h3{
     margin-right: 25px;
     border-radius: 20px;
     padding: 10px;
