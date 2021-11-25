@@ -1,13 +1,24 @@
+
 body{
     margin:0%;
-    background-color: #4ABDAC
+    background-color: #4ABDAC;
+    letter-spacing: 0.5px;
+
 }
 
-p {
-    
-    font-size: 15px;
+p{
     text-align: justify;
-    font-family: monospace;
+    line-height: 1.5;
+
+}
+
+h1, h3 {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #F7B733;
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
 }
 
 #head1 {
@@ -19,42 +30,13 @@ p {
     font-family: sans-serif;
     text-align: center;
 }
-    
-.olhos {
-    float: left;
-    margin-right: 15px;
-}
-
-.soco {
-    float: right;
-    margin-left: 15px;
-}
-
-
-h1, h3 {
-    border-radius: 20px;
-    display: inline-block;
-    padding: 10px;
-    background-color: #F7B733;
-    color: white;
-    font-family: sans-serif;
-}
-
-table, th, td {
-    
-    border-collapse: collapse;
-    border:1px solid black;
-  }
-
-section {
-    text-align: center;
-}
 
 .links {
     padding: 20px;
     background-color: #DFDCE3;
     text-align: center;
 }
+
 header ul {
     max-width: 60%;
     margin:auto;
@@ -82,15 +64,61 @@ header ul li a{
     text-align: center;
 }
 
-header{
-    text-align: center;
+
+.art-1{
+    width: 65%;
+    margin-bottom: 80px;
 }
+
+.foto-inteira {
+    float: left;
+    margin: 0px 25px 25px 25px;
+}
+
+table, th, td {
+    
+    border-collapse: collapse;
+    border:1px solid black;
+  }
+
+.art-2{
+    width: 65%;
+    margin-bottom: 80px;
+}
+
+.head3{
+    text-align: left;
+}
+    
+.olhos {
+    float: left;
+    margin: 0px 25px 15px 25px;
+
+}
+
+.art-4{
+    width: 65%;
+    margin-bottom: 80px;
+}
+
+.soco {
+    float:left;
+    margin: 0px 25px 15px 25px;
+
+}
+
 
 footer {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #DFDCE3;
     text-align: center;
 }
 
-.paragrafo {
-    max-width: 60%;
-    margin:auto;
+#fim {
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    color: black;
 }
