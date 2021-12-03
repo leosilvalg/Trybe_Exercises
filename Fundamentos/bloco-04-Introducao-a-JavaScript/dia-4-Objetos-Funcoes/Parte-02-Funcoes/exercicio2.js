@@ -41,7 +41,7 @@ console.log(listas([2, 3, 6, 7, 10, 1]));*/
 /*Exercico 4*/
 /*function listas(array) {
 
-    //Definindo a variavel de maior comprimento como sendo zero
+    //Definindo o primeiro nome como sendo maior
     let maior = array[0];
 
 
@@ -59,17 +59,20 @@ console.log(listas(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 /*function listas(array) {
     //Definindo a variavel como sendo zero
     let resul = 0;
-    let repete = array[0];
+    let repete = [];
 
-    for (let i = 0; i < array.length; i += 1) {
-        if (array[menor] > array[i]) {
-            menor = i;
+    for (let i in array) {
+        for(let j = 1; j < array.length; j +=1){
+            if (array[i] == array[j]){
+            resul = resul+1
+            }
         }
+       repete.push(resul)
     }
-    return menor;
+    return resul;
 }
 
-console.log(listas([2, 3, 6, 7, 10, 1]))*/
+console.log(listas([2, 3, 2, 5, 8, 2, 3]))*/
 
 /*Exercicio 6*/
 /*function soma(numero){
@@ -88,7 +91,7 @@ console.log(soma(10));*/
 /*Exercicio 7*/
 //Utilizando o Split
 
-function verificaFinal(palavra, finalPalavra){
+/*function verificaFinal(palavra, finalPalavra){
     let resul = true;
     palavra = palavra.split('');
     finalPalavra = finalPalavra.split('');
@@ -101,4 +104,4 @@ function verificaFinal(palavra, finalPalavra){
     return resul;
 }
 
-console.log(verificaFinal('Teste', 'be'));
+console.log(verificaFinal('Teste', 'be'));*/
