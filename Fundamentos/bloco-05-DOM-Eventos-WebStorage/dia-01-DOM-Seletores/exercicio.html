@@ -42,18 +42,54 @@
       </section>
     </main>
     <script>
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-        */
+        
+       // Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        //- document.getElementById()
+        //- document.getElementsByClassName()
+        //- document.getElementsByTagName()
+ //Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+    function changeText() {
+        let texto = document.getElementsByTagName('p')[1];
+        texto.innerText = 'Tebalhando com tecnologia';
+    }
+    changeText()
+ //Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+    function changeColor() {
+        let verde = document.getElementsByClassName('main-content')[0];
+        verde.style.background = "rgb(76,164,109)";
+    }
+    changeColor();
+ //Crie uma função que mude a cor do quadrado vermelho para branco.
+ function changeColorWhite() {
+        let branco = document.getElementsByClassName('center-content')[0];
+        branco.style.background = "white";
+    }
+    changeColorWhite();
+ //Crie uma função que corrija o texto da tag <h1>.
+    function changeName() {
+        let nome = document.getElementsByTagName('h1')[0];
+
+        nome.innerHTML = "Exercício 5.1 - Javascript"
+    }
+    changeName();
+ //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    function paragrafo() {
+        let maiusculo = document.getElementsByTagName ('p')[0];
+
+        maiusculo.innerHTML = maiusculo.innerHTML.toUpperCase();
+    }
+    paragrafo();
+ //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    function mostraParagrafo() {
+        
+    
+    let paragrafo = document.getElementsByTagName('p');
+    for (let index = 0; index < paragrafo.length; index += 1) {
+      console.log(paragrafo[index].innerHTML);
+        
+    }
+  }      
+    mostraParagrafo();
     </script>
   </body>
 </html>
