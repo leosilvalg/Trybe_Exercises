@@ -105,6 +105,38 @@
         valorItens.innerHTML = lista;
         criaUl.appendChild(valorItens);
       }
+
+      //Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      for(let i = 1; i <= 3; i += 1){
+        const h3 = document.createElement('h3');
+
+        h3.innerHTML = 'teste ' + i;
+
+        main.appendChild(h3);
+      }
+      //Adicione a classe title na tag h1 criada;
+      ex1.className = 'title';
+
+      //Adicione a classe description nas 3 tags h3 criadas;
+      const H3 = document.getElementsByTagName('h3');
+      for (let i in H3){
+        H3[i].className = 'description';
+      }
+
+      //Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+      const left = document.getElementsByClassName('left-content')[0];
+      main = document.removeChild(creatSection2);
+
+      //Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+      document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
+      
+      //Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+      document.getElementsByClassName('main-content')[0].style.backgroundColor = 'green';
+      
+      //Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+      document.getElementsByClassName('right-content').lastChild.remove();
+      document.getElementsByClassName('right-content').lastChild.remove();
+
     </script>
   </body>
 </html>
