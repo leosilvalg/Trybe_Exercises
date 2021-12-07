@@ -57,20 +57,54 @@
   </head>
   <body>
     <script>
-        //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+      //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
       const ex1  = document.createElement('h1');
       ex1.innerText = 'Exercício 5.2 - JavaScript DOM ';
       document.body.appendChild(ex1);
 
       //Adicione a tag main com a classe main-content como filho da tag body ;
-        const main = document.createElement('main');
-        main.className = 'main-content';
-        document.body.appendChild(main);
+      const main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
 
       //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
       const creatSection = document.createElement('section');
       creatSection.className = 'center-content';
-      document.main.appendChild(creatSection);
+      main.appendChild(creatSection);
+
+      //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      const creatP = document.createElement('p');
+      creatP.innerText = 'Colocando algum texto ao paragrafo do exercício';
+      creatSection.appendChild(creatP);
+
+      //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+      const creatSection2 = document.createElement('section');
+      creatSection2.className = 'left-content';
+      main.appendChild(creatSection2);
+
+      //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+      const creatSection3 = document.createElement('section');
+      creatSection3.className = 'right-content';
+      main.appendChild(creatSection3);
+
+      //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      const image = document.createElement('img');
+      image.className = 'small-image';
+      image.src = 'https://picsum.photos/200';
+      creatSection2.appendChild(image);
+
+      //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const criaUl = document.createElement('ul');
+      creatSection3.appendChild(criaUl);
+
+      const valores = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < valores.length; i += 1){
+        const lista = valores[i];
+
+        const valorItens = document.createElement('li');
+        valorItens.innerHTML = lista;
+        criaUl.appendChild(valorItens);
+      }
     </script>
   </body>
 </html>
