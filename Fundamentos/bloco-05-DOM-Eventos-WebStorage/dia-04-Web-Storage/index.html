@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+    <style>
+
+        body{
+            margin: 20px;
+        }
+
+        #titulo {
+            text-align: center;
+            font-size:4em;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .navegacao {
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+            margin: auto;
+            width: 60%;
+            
+        }
+
+        .nomes{
+            display: block;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .botoes {
+            display:inline-grid;
+            align-items: center;
+            justify-content:center;
+            margin-right: 50px;
+           
+        }
+
+        .conteudo {
+            display:flex;
+            text-align: center;
+            justify-content: center;
+            flex: auto;
+        }
+
+        .paragrafo{
+            text-align:justify;
+            display: flex;
+            padding: 15px;
+            font-size: 20px;
+            line-height: 35px;
+            font-family: monospace;
+        }
+
+    
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Trabalho sobre Web Storage e Eventos</h1>
+    </header>
+    <hr size="10px">
+    <section class="navegacao">
+        <section  class="botoes">
+            <input type = "text" placeholder="Cor de fundo" id="fundoInput">
+            <button id = "corDeFundo">Preto</button>
+            <button>Vermelho</button>
+            <button>Azul</button>
+        </section>
+        <section id="corDoTexto" class="botoes">
+            <span class="nomes">Cor do texto</span>
+            <button>Vermelho</button>
+            <button>Amarelo</button>
+            <button>Azul</button>
+        </section>
+        <section id="tamanhoFonte" class="botoes">
+            <span class="nomes">Tamanho da fonte</span>
+            <button>8pt</button>
+            <button>20pt</button>
+            <button>30pt</button>
+        </section>
+        <section id="espacoLinha" class="botoes">
+            <span class="nomes">Espaçamento das linhas</span>
+            <button>1.0</button>
+            <button>1.5</button>
+            <button>2.0</button>
+        </section>
+        <section id="tipoFonte" class="botoes">
+            <span class="nomes">Tipo da fonte</span>
+            <button>Monospace</button>
+            <button>Arial</button>
+            <button>Cambria</button>
+        </section>
+    </section>
+    <hr size="10px">
+    <main>
+        <section class="conteudo">
+            <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec consequat felis, vel laoreet dui. Curabitur eros mi, tincidunt quis purus vitae, feugiat blandit augue. Vestibulum ut libero laoreet, sodales mi eget, sagittis elit. Pellentesque vehicula erat vitae lectus porta, quis ultrices leo pretium. Vivamus ullamcorper viverra eros nec auctor. Nulla porttitor, mauris vel convallis tempus, velit lorem consequat tortor, ut molestie odio orci tincidunt lacus. Integer tempus velit ligula, non placerat orci laoreet id. Vivamus at pulvinar ligula, sit amet sagittis magna. Integer tempor rutrum lorem et feugiat. Fusce sapien purus, dictum eu erat egestas, vehicula elementum erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur blandit maximus purus sit amet aliquet. Duis pretium, odio congue sodales lobortis, elit lectus aliquet massa, nec mollis magna ligula non est. Vestibulum malesuada ultrices rutrum.</p>
+            <p class="paragrafo">Ut rhoncus venenatis purus at tristique. Vestibulum eu felis sapien. Vivamus in mattis purus. Sed ultricies neque magna, eu laoreet nunc viverra in. Aenean dignissim condimentum orci, quis vehicula ligula egestas a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In viverra, turpis eu vestibulum vulputate, libero quam convallis ligula, et mollis urna justo dapibus lacus. Cras quis commodo ante, ut vestibulum nisl. Ut diam leo, gravida sit amet elementum id, vehicula a risus. Curabitur blandit turpis eu iaculis tincidunt. Nullam in nulla ac tortor cursus imperdiet. Cras lobortis urna nisl, pharetra vehicula risus suscipit ac.</p>
+            <p class="paragrafo">Quisque interdum commodo eros, tincidunt laoreet lectus. Nullam id efficitur nunc. Integer in placerat turpis. Aliquam venenatis ex sit amet nulla tincidunt auctor. Curabitur egestas rutrum libero, in fermentum massa. Maecenas gravida dolor ut nisi mollis lobortis. Sed dignissim libero sit amet vestibulum convallis.</p>
+            <p class="paragrafo">Morbi elementum quam nibh, et accumsan nulla viverra sit amet. Vestibulum et arcu ornare, euismod sem a, ornare elit. Nunc orci tortor, blandit fermentum condimentum eget, egestas non elit. Nullam molestie libero eu tellus feugiat, eu tristique nisi porttitor. Aliquam vel dignissim ligula. Fusce eget egestas eros. Vivamus rutrum convallis rhoncus.</p>
+            <p class="paragrafo">Donec non sagittis elit. Mauris ultrices id ligula ut sollicitudin. Cras sapien lacus, condimentum at lorem eget, sagittis sodales purus. Donec tempor sollicitudin malesuada. Aenean varius consequat dui in fermentum. Suspendisse potenti. Etiam orci orci, aliquam quis suscipit id, sodales nec felis. Curabitur ornare eleifend eleifend. Vivamus iaculis massa feugiat fringilla auctor. Quisque nisl tellus, tincidunt in sem id, euismod scelerisque mi. Aliquam ut nisl a dui maximus ullamcorper sit amet nec lectus. Integer dictum justo sit amet justo dapibus, eget finibus neque volutpat.</p>
+        </section>
+        
+    </main>
+    <hr size="10px">
+</body>
+</html>
