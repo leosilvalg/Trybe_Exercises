@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto1_Lessons_Learned)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto2_Playground_Functions)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [x] 5-6: _[Projeto - Arte com Pixels]()_
-- [x] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto3_Pixel_Art)_
+- [x] 5-6: _[Projeto - Lista de Tarefas](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto4_To_Do_List)_
+- [x] 5-7: _[Projeto Bonus - Adivinhe a Cor](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto5_Color_Guess)_
+- [x] 5-7: _[Projeto Bonus - Gerador de Memes](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto6_Meme_Generator)_
+- [x] 5-7: _[Projeto Bonus - Carta Misteriosa](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto7_Mistery_Card)_
 
 ##### Bloco 6: HTML & CSS avançado
 
