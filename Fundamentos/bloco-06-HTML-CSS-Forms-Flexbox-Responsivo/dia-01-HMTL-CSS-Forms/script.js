@@ -20,8 +20,8 @@ criaEstado();
 //
 function checaData () {
     let data = date.value;
-    let dia = data[0] + data [1];
-    let mes = data[2] + data [3];
+    let dia = data[0] + data[1];
+    let mes = data[2] + data[3];
     let ano = data[4] + data[5] + data[6] + data[7];
     if ( dia <= 0 || dia > 31) {
         alert("Dia inválido !");
@@ -30,9 +30,10 @@ function checaData () {
     } else if (ano <= 0) {
         alert("Ano inválido!");
     } else {
-        return `${dia}/${mes}?${ano}`
+        return `${dia}/${mes}/${ano}`;
     }
 }
+checaData();
 
 //
 function cabecalho () {
@@ -42,4 +43,3 @@ function cabecalho () {
     resume.appendChild(tag);
 }
 cabecalho();
-
