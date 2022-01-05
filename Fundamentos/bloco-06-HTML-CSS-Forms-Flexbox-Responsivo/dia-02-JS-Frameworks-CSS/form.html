@@ -6,41 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
   <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <style>
+    header {
+      text-align: center;
+    }
+
+    fieldset {
+      text-align: center;
+      width: 50%;
+      margin: 50px auto;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Exercício de fixação sobre Forms</h1>
+    <h1>Exercício de fixação sobre Forms e Bibliotécas</h1>
   </header>
   <section>
     <form action="" method="get">
       <fieldset>
-        <div class="form-group">
+        <div class="form-label">
           <label for="nome">Nome</label>
-          <input id="nome" type="text" maxlength="40" name="nome" required>
+          <input class="form-control" id="nome" type="text" maxlength="40" name="nome" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="email">Email</label>
-          <input id="email" name="email" maxlength="50" type="email-input" required>
+          <input class="form-control" id="email" name="email" maxlength="50" type="email-input" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="cpf">CPF</label>
-          <input id="text" name="cpf" maxlength="11" type="text" required>
+          <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="end">Endereço</label>
-          <input id="end" name="endereco" maxlength="200" type="text" required>
+          <input class="form-control" id="end" name="endereco" maxlength="200" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="cidade">Cidade</label>
-          <input id="cidade" name="cidade" maxlength="28" type="text" required>
+          <input class="form-control" id="cidade" name="cidade" maxlength="28" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="estados">Estado</label>
           <select name="estados" id="estados" required>
             <option selected value="">Selecione o estado</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="casa">Casa</label>
           <input id="casa" name="casa" type="radio">
           <label for="apto">Apartamento</label>
@@ -48,27 +59,27 @@
         </div>
       </fieldset>
       <fieldset>
-        <div class="form-group">
+        <div class="form-label">
           <label for="resumo">Resumo do currículo</label>
           <textarea required name="resumo" id="resumo" cols="30" rows="10" maxlength="1000"></textarea>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="cargo">Cargo</label>
           <input type="text" name="cargo" maxlength="40" id="cargo" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="descricao">Descrição do cargo</label>
           <input type="text" name="descricao" maxlength="500" id="descricao" required>
         </div>
-        <div class="form-group">
+        <div class="form-label">
           <label for="data">Data de inicio</label>
           <input type="text" name="data" value="" id="data" required>
         </div>
-      </fieldset>
-      <div class="form-group">
+        <div class="form-label">
         <button id="botaoEnvia" type="submit">Enviar</button>
         <button class="clear" type="reset">Limpar</button>
-      </div>
+        </div>
+      </fieldset>
     </form>
   </section>
 </body>
