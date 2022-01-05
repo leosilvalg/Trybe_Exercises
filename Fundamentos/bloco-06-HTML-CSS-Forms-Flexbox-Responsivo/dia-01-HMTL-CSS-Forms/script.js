@@ -31,14 +31,14 @@ function checaData () {
     let dia = data[0] + data[1];
     let mes = data[2] + data[3];
     let ano = data[4] + data[5] + data[6] + data[7];
-    if ( dia <= 0 || dia > 31) {
+    if ( parseInt(dia) <= 0 || parseInt(dia) > 31) {
         alert("Dia inválido !");
-    } else if ( mes < 1 || mes > 12) {
+    } else if ( parseInt(mes) < 1 || parseInt(mes) > 12) {
         alert("Mes inválido!");
-    } else if (ano <= 0) {
+    } else if (parseInt(ano) <= 0) {
         alert("Ano inválido!");
     } else {
-        return `${dia}/${mes}/${ano}`;
+        return data.value = `${parseInt(dia)}/${parseInt(mes)}/${parseInt(ano)}`;
     }
 }
 checaData();
