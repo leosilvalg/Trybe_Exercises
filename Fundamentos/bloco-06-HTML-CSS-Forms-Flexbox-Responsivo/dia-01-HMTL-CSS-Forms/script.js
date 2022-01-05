@@ -1,6 +1,6 @@
- let resume = document.querySelector('#resumo');
- let enviar = document.querySelector("#botaoEnvia");
- let date = document.querySelector("#data");
+ const resume = document.querySelector('#resumo');
+ const enviar = document.querySelector("#botaoEnvia");
+ const date = document.querySelector("#data");
 
 
 //Criando os estados
@@ -16,6 +16,14 @@ function criaEstado () {
     }
 }
 criaEstado();
+
+function cabecalho () {
+    const texto = "Informações Pessoais";
+    const tag = document.createElement('h1');
+    tag.innerText = texto;
+    resume.appendChild(tag);
+}
+cabecalho();
 
 //
 function checaData () {
@@ -35,11 +43,10 @@ function checaData () {
 }
 checaData();
 
-//
-function cabecalho () {
-    const texto = "Informações Pessoais";
-    const tag = document.createElement('h1');
-    tag.innerText = texto;
-    resume.appendChild(tag);
+function submit () {
+    cabecalho();
 }
-cabecalho();
+
+enviar.addEventListener('click', submit);
+
+
