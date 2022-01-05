@@ -10,25 +10,16 @@
     body {
       background-color: rgb(234, 237, 240);
     }
-    .header {
+    .header, form{
       text-align: center;
       background-color: snow;
       border: 2px solid rgb(214, 217, 220);
       border-radius: 4px;
-      width: 80%;
+      width: 60%;
       margin: 40px auto;
       padding: 50px;
     }
 
-    fieldset {
-      text-align: center;
-      width: 50%;
-      margin: 50px auto;
-    }
-
-    .form-group {
-      margin-bottom: 25px;
-    }
   </style>
 </head>
 <body>
@@ -38,34 +29,34 @@
   <section>
     <form action="" method="get">
       <fieldset>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="nome">Nome</label>
           <input class="form-control" id="nome" type="text" maxlength="40" name="nome" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="email">Email</label>
           <input class="form-control" id="email" name="email" maxlength="50" type="email-input" required>
           <small id="emailHelp" class="form-text text-muted">Não iremos compartilhar seu email com outros usuários!</small>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="cpf">CPF</label>
           <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="end">Endereço</label>
           <input class="form-control" id="end" name="endereco" maxlength="200" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="cidade">Cidade</label>
           <input class="form-control" id="cidade" name="cidade" maxlength="28" type="text" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="estados">Estado</label>
           <select name="estados" id="estados" required>
             <option selected value="">Selecione o estado</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="casa">Casa</label>
           <input id="casa" name="casa" type="radio">
           <label for="apto">Apartamento</label>
@@ -73,23 +64,23 @@
         </div>
       </fieldset>
       <fieldset>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="resumo">Resumo do currículo</label>
           <textarea required name="resumo" id="resumo" cols="30" rows="10" maxlength="1000"></textarea>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="cargo">Cargo</label>
           <input type="text" name="cargo" maxlength="40" id="cargo" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="descricao">Descrição do cargo</label>
           <input type="text" name="descricao" maxlength="500" id="descricao" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
           <label for="data">Data de inicio</label>
           <input type="text" name="data" value="" id="data" required>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
         <button class="btn btn-success" id="botaoEnvia" type="submit">Enviar</button>
         <button class="clear btn btn-danger" type="reset">Limpar</button>
         </div>
