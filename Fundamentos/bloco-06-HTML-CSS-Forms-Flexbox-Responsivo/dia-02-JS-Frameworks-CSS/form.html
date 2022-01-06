@@ -28,11 +28,11 @@
 </head>
 <body>
   <header class="header text-center container"> 
-    <h1>Exercício de fixação sobre Forms e Bibliotécas</h1>
+    <h1>Exercício de fixação sobre Forms e Bibliotecas</h1>
   </header>
   <section>
     <div class="container">
-      <form action="" method="get">
+      <form id="form" action="" method="get">
         <div class="mb-3 container">
           <div class="row g-3 ">
             <div class="col-md">
@@ -48,7 +48,7 @@
         <div class="mb-3 container">
           <div class="row  g-3">
             <div class="col-md-6">
-              <label for="email">Email</label>
+              <label class="form-label" for="email">Email</label>
               <input class="form-control" id="email" name="email" maxlength="50" type="email-input" required placeholder="you@example.com">
             </div>
           </div>
@@ -56,19 +56,19 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md">
-              <label for="cpf">CPF</label>
-              <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
+              <label class="form-label" for="cpf">CPF</label>
+              <input placeholder="000.000.000-00" class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
             </div>
             <div class="col-md">
-              <label for="cpf">RG</label>
-              <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
+              <label class="form-label" for="cpf">RG</label>
+              <input placeholder="00.000.000-0" class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
             </div>
           </div>
         </div>
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="end">Address</label>
+              <label class="form-label" for="end">Address</label>
               <input placeholder="Main St 1234" class="form-control" id="end" name="endereco" maxlength="200" type="text" required>
             </div>
           </div>
@@ -76,13 +76,13 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md">
-              <label for="estados">State</label>
+              <label class="form-label" for="estados">State</label>
               <select class="form-select" name="estados" id="estados" required>
                 <option selected value="">Choose...</option>
               </select>
             </div>
             <div class="col-md">
-              <label for="cidade">City</label>
+              <label class="form-label" for="cidade">City</label>
               <input class="form-control" id="cidade" name="cidade" maxlength="28" type="text" required>
             </div>
           </div>
@@ -103,7 +103,7 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="resumo">Resumo do currículo</label>
+              <label class="form-label" for="resumo">Resumo do currículo</label>
               <textarea class="form-control" rows="4" required name="resumo" id="resumo" maxlength="1000"></textarea>
             </div>
           </div>
@@ -111,7 +111,7 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="cargo">Last job</label>
+              <label class="form-label" for="cargo">Last job</label>
               <input class="form-control" type="text" name="cargo" maxlength="40" id="cargo" required>
             </div>
           </div>
@@ -119,7 +119,7 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md-6">
-              <label for="descricao">Descrição do cargo</label>
+              <label class="form-label" for="descricao">Descrição do cargo</label>
               <input class="form-control" type="text" name="descricao" maxlength="500" id="descricao" required>
             </div>
           </div>
@@ -127,11 +127,11 @@
         <div class="mb-3 container">
           <div class="row g-3">
             <div class="col-md">
-              <label for="data">Data de inicio</label>
+              <label class="form-label" for="data">Data de inicio</label>
               <input class="form-control" type="date" name="data" value="" id="data" required>
             </div>
             <div class="col-md">
-              <label for="data">Data do término</label>
+              <label class="form-label" for="data">Data do término</label>
               <input class="form-control" type="date" name="data" value="" id="data" required>
             </div>
           </div>
@@ -144,5 +144,7 @@
     </div>
   </section>
   <footer></footer>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
