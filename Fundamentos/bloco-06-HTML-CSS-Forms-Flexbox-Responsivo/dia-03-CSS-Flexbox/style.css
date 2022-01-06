@@ -17,3 +17,27 @@
   width: 25px;
   margin-left: 10px;
 }
+
+header {
+  background-color: black;
+}
+
+.cabecalho {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+#trybe {
+  color: white;
+}
+
+#login {
+  color: white;
+  text-decoration: underline;
+}
+
+.textoSecao {
+  display: flex;
+  justify-content: center;
+}
