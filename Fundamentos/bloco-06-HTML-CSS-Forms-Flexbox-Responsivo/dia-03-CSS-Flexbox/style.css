@@ -40,4 +40,38 @@ header {
 .textoSecao {
   display: flex;
   justify-content: center;
+  padding: 10px;
+}
+
+.imagens {
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.logo {
+  background-color: snow;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+hr {
+  display: flex;
+  width: 200px;
+  margin: auto;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
