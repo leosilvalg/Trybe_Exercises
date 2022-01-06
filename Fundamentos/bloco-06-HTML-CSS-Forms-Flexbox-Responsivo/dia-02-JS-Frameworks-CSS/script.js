@@ -86,3 +86,35 @@ validate.addField('#city', [
         errorMessage: 'City is required',
     },
 ]);
+validate.addField('#lastJob', [
+    {
+        rule: 'maxLength',
+        value: 40,
+    },
+    {
+        rule: 'required',
+        errorMessage: 'Last job is required',
+    },
+]);
+validate.addField('#description', [
+    {
+        rule: 'maxLength',
+        value: 500,
+    },
+    {
+        rule: 'required',
+        errorMessage: 'Description is required',
+    },
+]);
+validate.addField('#startDate', [
+    {
+        rule: 'required',
+        errorMessage: 'Start date is required',
+    },
+]);
+validate.addField('#endDate', [
+    {
+        rule: 'required',
+        errorMessage: 'End date is required',
+    },
+]);
