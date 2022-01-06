@@ -18,6 +18,12 @@
       padding: 50px;
     }
 
+    footer {
+      background-color: snow;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
   </style>
 </head>
 <body>
@@ -29,11 +35,11 @@
       <form action="" method="get">
         <div class="mb-3 container">
           <div class="row g-3 ">
-            <div class="col-md-4">
+            <div class="col-md">
               <label class="form-label" for="nome">First name</label>
               <input placeholder="First name" class="form-control" id="nome" type="text" maxlength="40" name="nome" required>
             </div>
-            <div class="col-md-4">
+            <div class="col-md">
               <label class="form-label" for="nome">Last name</label>
               <input placeholder="Last name" class="form-control" id="nome" type="text" maxlength="40" name="nome" required>
             </div>
@@ -41,7 +47,7 @@
         </div>
         <div class="mb-3 container">
           <div class="row  g-3">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <label for="email">Email</label>
               <input class="form-control" id="email" name="email" maxlength="50" type="email-input" required placeholder="you@example.com">
             </div>
@@ -49,11 +55,11 @@
         </div>
         <div class="mb-3 container">
           <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md">
               <label for="cpf">CPF</label>
               <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
             </div>
-            <div class="col-md-4">
+            <div class="col-md">
               <label for="cpf">RG</label>
               <input class="form-control" id="text" name="cpf" maxlength="11" type="text" required>
             </div>
@@ -61,7 +67,7 @@
         </div>
         <div class="mb-3 container">
           <div class="row g-3">
-            <div class="col-md-8">
+            <div class="col-md-6">
               <label for="end">Address</label>
               <input placeholder="Main St 1234" class="form-control" id="end" name="endereco" maxlength="200" type="text" required>
             </div>
@@ -69,13 +75,13 @@
         </div>
         <div class="mb-3 container">
           <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md">
               <label for="estados">State</label>
               <select class="form-select" name="estados" id="estados" required>
                 <option selected value="">Choose...</option>
               </select>
             </div>
-            <div class="col-md-4">
+            <div class="col-md">
               <label for="cidade">City</label>
               <input class="form-control" id="cidade" name="cidade" maxlength="28" type="text" required>
             </div>
@@ -93,25 +99,38 @@
             <input class="form-check-input" type="radio" name="casa"  id="apto">  
           </div>
         </div>
+        <hr >
         <div class="mb-3 container">
-          <label for="resumo">Resumo do currículo</label>
-          <textarea required name="resumo" id="resumo" maxlength="1000" style="resize:none"></textarea>
-        </div>
-        <div class="mb-3 container">
-          <label for="cargo">Last job</label>
-          <input class="form-control" type="text" name="cargo" maxlength="40" id="cargo" required>
-        </div>
-        <div class="mb-3 container">
-          <label for="descricao">Descrição do cargo</label>
-          <input class="form-control" type="text" name="descricao" maxlength="500" id="descricao" required>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="resumo">Resumo do currículo</label>
+              <textarea class="form-control" rows="4" required name="resumo" id="resumo" maxlength="1000"></textarea>
+            </div>
+          </div>
         </div>
         <div class="mb-3 container">
           <div class="row g-3">
-            <div class="col-md-4">
+            <div class="col-md-6">
+              <label for="cargo">Last job</label>
+              <input class="form-control" type="text" name="cargo" maxlength="40" id="cargo" required>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 container">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="descricao">Descrição do cargo</label>
+              <input class="form-control" type="text" name="descricao" maxlength="500" id="descricao" required>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 container">
+          <div class="row g-3">
+            <div class="col-md">
               <label for="data">Data de inicio</label>
               <input class="form-control" type="date" name="data" value="" id="data" required>
             </div>
-            <div class="col-md-4">
+            <div class="col-md">
               <label for="data">Data do término</label>
               <input class="form-control" type="date" name="data" value="" id="data" required>
             </div>
@@ -124,5 +143,6 @@
       </form>
     </div>
   </section>
+  <footer></footer>
 </body>
 </html>
