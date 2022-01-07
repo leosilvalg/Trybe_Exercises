@@ -15,102 +15,141 @@ function criaEstado () {
 }
 criaEstado();
 
-function cabecalho() {
-  let head = document.createElement('h1');
-  let text = "Resumo do Currículo";
-  head.innerHTML = text;
-  resumoPronto.appendChild(head);
-}
-
 function nome() {
   let primeiroNome = document.querySelector('#firstName').value;
   let ultimoNome = document.querySelector('#lastName').value;
-  let nomeParagrafo = document.createElement('p');
-  nomeParagrafo.innerHTML = `Full name: ${primeiroNome} ${ultimoNome}`;
-  resumoPronto.appendChild(nomeParagrafo);
+  if (primeiroNome == '' || ultimoNome == '') {
+    return false;
+  } else {
+    let head = document.createElement('h1');
+    let text = "Resumo do Currículo";
+    head.innerHTML = text;
+    resumoPronto.appendChild(head);
+    let nomeParagrafo = document.createElement('p');
+    nomeParagrafo.innerHTML = `Full name: ${primeiroNome} ${ultimoNome}`;
+    resumoPronto.appendChild(nomeParagrafo);
+  }
 }
 
 function email() {
   let email = document.querySelector('#email').value;
-  let emailParagrafo = document.createElement('p');
-  emailParagrafo.innerHTML = `Email: ${email}`;
-  resumoPronto.appendChild(emailParagrafo);
+  if (email === '') {
+    return false;
+  } else {
+    let emailParagrafo = document.createElement('p');
+    emailParagrafo.innerHTML = `Email: ${email}`;
+    resumoPronto.appendChild(emailParagrafo);
+  }
 }
 
 function documentos () {
   let cpf = document.querySelector('#cpf').value;
   let rg = document.querySelector('#rg').value;
-  let cpfParagrafo = document.createElement('p');
-  let rgParagrafo = document.createElement('p');
-  cpfParagrafo.innerHTML = `CPF: ${cpf}`;
-  resumoPronto.appendChild(cpfParagrafo);
-  rgParagrafo.innerHTML = `RG: ${rg}`;
-  resumoPronto.appendChild(rgParagrafo);
+  if (cpf === '' || rg === '') {
+    return false;
+  } else {
+    let cpfParagrafo = document.createElement('p');
+    let rgParagrafo = document.createElement('p');
+    cpfParagrafo.innerHTML = `CPF: ${cpf}`;
+    resumoPronto.appendChild(cpfParagrafo);
+    rgParagrafo.innerHTML = `RG: ${rg}`;
+    resumoPronto.appendChild(rgParagrafo);
+  }
 }
 
 function address() {
   let endereco = document.querySelector('#address').value;
+  if (endereco === '') {
+    return false;
+  } else {
   let enderecoParagrafo = document.createElement('p');
   enderecoParagrafo.innerHTML = `Address: ${endereco}`;
   resumoPronto.appendChild(enderecoParagrafo);
+  }
 }
 
 function state() {
   let estado = document.querySelector('#state').value;
+  if(estado === '') {
+    return false;
+  } else {
   let estadoParagrafo = document.createElement('p');
   estadoParagrafo.innerHTML = `State: ${estado}`;
   resumoPronto.appendChild(estadoParagrafo);
+  }
 }
 
 function cidade() {
   let cidade = document.querySelector('#city').value;
+  if (cidade == '') {
+    return false;
+  } else {
   let cidadeParagrafo = document.createElement('p');
   cidadeParagrafo.innerHTML = `City: ${cidade}`;
   resumoPronto.appendChild(cidadeParagrafo);
+  }
 }
 
 function resumoTrabalho() {
   let resumo = document.querySelector('#resumo').value;
+  if (resumo == '') {
+    return false;
+  } else {
   let resumoParagrafo = document.createElement('p');
   resumoParagrafo.innerHTML = `Resumo: ${resumo}`;
   resumoPronto.appendChild(resumoParagrafo);
+  }
 }
 
 function lastJob() {
   let ultimoEmprego = document.querySelector('#lastJob').value;
+  if (ultimoEmprego == '') {
+    return false;
+  } else {
   let resumoJob = document.createElement('p');
   resumoJob.innerHTML = `Last job: ${ultimoEmprego}`;
   resumoPronto.appendChild(resumoJob);
+  }
 }
 
 function description() {
   let descricao = document.querySelector('#description').value;
+  if (descricao == '') {
+    return false;
+  } else {
   let descricaoParagrafo = document.createElement('p');
   descricaoParagrafo.innerHTML = `Job description: ${descricao}`;
   resumoPronto.appendChild(descricaoParagrafo);
+  }
 }
 
 function date() {
   let dataInicio = document.querySelector('#startDate').value;
   let dataFinal = document.querySelector('#endDate').value;
+  if (dataInicio == '' || dataFinal == '') {
+    return false;
+  } else {
   let dataParagrafo = document.createElement('p');
   dataParagrafo.innerHTML = `Time on Job: ${dataInicio} till ${dataFinal}`;
   resumoPronto.appendChild(dataParagrafo);
+  }
 }
 
-function envia (event) {
-  event.preventDefault();
-  cabecalho();
-  nome();
-  email();
-  documentos();
-  address();
-  state();
-  cidade();
-  resumoTrabalho();
-  lastJob();
-  description();
-  date();
+function envia () {
+    if (envia != true) {
+        alert("Complete os campos em branco!");
+    } else {
+        nome();
+        email();
+        documentos();
+        address();
+        state();
+        cidade();
+        resumoTrabalho();
+        lastJob();
+        description();
+        date();
+    }
 }
 
 botaoEnviar.addEventListener('click', envia);
@@ -201,6 +240,16 @@ validate.addField('#city', [
     {
         rule: 'required',
         errorMessage: 'City is required',
+    },
+]);
+validate.addField('#resumo', [
+    {
+        rule: 'maxLength',
+        value: 500,
+    },
+    {
+        rule: 'required',
+        errorMessage: 'About is required',
     },
 ]);
 validate.addField('#lastJob', [

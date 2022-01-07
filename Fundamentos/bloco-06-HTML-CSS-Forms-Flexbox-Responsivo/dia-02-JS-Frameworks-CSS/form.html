@@ -29,118 +29,116 @@
   <header class="header text-center container"> 
     <h1>Exercício de fixação sobre Forms e Bibliotecas</h1>
   </header>
-  <section>
-    <div class="container">
-      <form id="form" action="" method="get">
-        <div class="mb-3 container">
-          <div class="row g-3 ">
-            <div class="col-md">
-              <label class="form-label" for="firstName">First name</label>
-              <input placeholder="First name" class="form-control" id="firstName" type="text" name="firstName">
-            </div>
-            <div class="col-md">
-              <label class="form-label" for="lastName">Last name</label>
-              <input placeholder="Last name" class="form-control" id="lastName" type="text" name="lastName">
-            </div>
+  <section class="container">
+    <form id="form" action="" method="GET">
+      <div class="mb-3 container">
+        <div class="row g-3 ">
+          <div class="col-md">
+            <label class="form-label" for="firstName">First name</label>
+            <input placeholder="First name" class="form-control" id="firstName" type="text" required maxlength="20" name="firstName">
+          </div>
+          <div class="col-md">
+            <label class="form-label" for="lastName">Last name</label>
+            <input placeholder="Last name" class="form-control" id="lastName" type="text" required maxlength="20" name="lastName">
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row  g-3">
-            <div class="col-md-6">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" name="email" type="email-input" placeholder="you@example.com">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row  g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" name="email" required type="email-input" placeholder="you@example.com">
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md">
-              <label class="form-label" for="cpf">CPF</label>
-              <input placeholder="000.000.000-00" class="form-control" id="cpf" name="cpf" type="text">
-            </div>
-            <div class="col-md">
-              <label class="form-label" for="cpf">RG</label>
-              <input placeholder="00.000.000-0" class="form-control" id="rg" name="cpf" type="text">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md">
+            <label class="form-label" for="cpf">CPF</label>
+            <input placeholder="000.000.000-00" class="form-control" required maxlength="11" id="cpf" name="cpf" type="text">
+          </div>
+          <div class="col-md">
+            <label class="form-label" for="cpf">RG</label>
+            <input placeholder="00.000.000-0" class="form-control" required maxlength="11" id="rg" name="cpf" type="text">
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" for="address">Address</label>
-              <input placeholder="Main St 1234" class="form-control" id="address" name="address" type="text">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="address">Address</label>
+            <input placeholder="Main St 1234" required maxlength="200" class="form-control" id="address" name="address" type="text">
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md">
-              <label class="form-label" for="state">State</label>
-              <select class="form-select" name="estados" id="state">
-                <option selected value="">Choose...</option>
-              </select>
-            </div>
-            <div class="col-md">
-              <label class="form-label" for="city">City</label>
-              <input class="form-control" id="city" name="cidade" type="text">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md">
+            <label class="form-label" for="state">State</label>
+            <select class="form-select" name="estados" id="state">
+              <option selected value="">Choose...</option>
+            </select>
+          </div>
+          <div class="col-md">
+            <label class="form-label" for="city">City</label>
+            <input class="form-control" id="city" name="cidade" required maxlength="28" type="text">
           </div>
         </div>
-        <hr>
-        <h4 class="container mb-3">Residência</h4>
-        <div class="mb-3 container">
-          <div class="form-check">
-            <label class="form-check-label" for="casa">Casa</label>
-            <input class="form-check-input" id="casa" name="casa" type="radio">
-          </div>
-          <div class="form-check">
-            <label class="form-check-label" for="apto">Apartamento</label>
-            <input class="form-check-input" type="radio" name="casa"  id="apto">  
-          </div>
+      </div>
+      <hr>
+      <h4 class="container mb-3">Residência</h4>
+      <div class="mb-3 container">
+        <div class="form-check">
+          <label class="form-check-label" for="casa">Casa</label>
+          <input class="form-check-input" id="casa" name="casa" type="radio">
         </div>
-        <hr >
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" for="resumo">Resumo do currículo</label>
-              <textarea class="form-control" rows="4" required name="resumo" id="resumo"></textarea>
-            </div>
-          </div>
+        <div class="form-check">
+          <label class="form-check-label" for="apto">Apartamento</label>
+          <input class="form-check-input" type="radio" name="casa"  id="apto">  
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" for="lastJob">Last job</label>
-              <input class="form-control" type="text" name="lastJob" id="lastJob">
-            </div>
+      </div>
+      <hr >
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="resumo">Resumo do currículo</label>
+            <textarea class="form-control" rows="4" required name="resumo" id="resumo"></textarea>
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label" for="description">Last job description</label>
-              <input class="form-control" type="text" name="description" id="description">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="lastJob">Last job</label>
+            <input class="form-control" required maxlength="40" type="text" name="lastJob" id="lastJob">
           </div>
         </div>
-        <div class="mb-3 container">
-          <div class="row g-3">
-            <div class="col-md">
-              <label class="form-label" for="startDate">Start date</label>
-              <input class="form-control" type="date" name="startDate" value="" id="startDate">
-            </div>
-            <div class="col-md">
-              <label class="form-label" for="endDate">End date</label>
-              <input class="form-control" type="date" name="endDate" value="" id="endDate">
-            </div>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="description">Last job description</label>
+            <input class="form-control" type="text" required maxlength="500" name="description" id="description">
           </div>
         </div>
-        <div class="mb-3 container text-center">
-          <button class="btn btn-success" id="botaoEnvia" type="submit">Enviar</button>
-          <button class="clear btn btn-danger" type="reset">Limpar</button>
+      </div>
+      <div class="mb-3 container">
+        <div class="row g-3">
+          <div class="col-md">
+            <label class="form-label" for="startDate">Start date</label>
+            <input class="form-control" type="date" name="startDate" value="" id="startDate">
+          </div>
+          <div class="col-md">
+            <label class="form-label" for="endDate">End date</label>
+            <input class="form-control" type="date" name="endDate" value="" id="endDate">
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+      <div class="mb-3 container text-center">
+        <button class="btn btn-success" id="botaoEnvia" type="submit">Enviar</button>
+        <button class="clear btn btn-danger" type="reset">Limpar</button>
+      </div>
+    </form>
   </section>
   <section>
     <div id="resumoPronto"></div>
