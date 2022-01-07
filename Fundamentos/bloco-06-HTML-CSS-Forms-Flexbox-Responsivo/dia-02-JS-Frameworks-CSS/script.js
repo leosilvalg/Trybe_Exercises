@@ -136,20 +136,16 @@ function date() {
 }
 
 function envia () {
-    if (envia != true) {
-        alert("Complete os campos em branco!");
-    } else {
-        nome();
-        email();
-        documentos();
-        address();
-        state();
-        cidade();
-        resumoTrabalho();
-        lastJob();
-        description();
-        date();
-    }
+  nome();
+  email();
+  documentos();
+  address();
+  state();
+  cidade();
+  resumoTrabalho();
+  lastJob();
+  description();
+  date();
 }
 
 botaoEnviar.addEventListener('click', envia);
@@ -284,3 +280,5 @@ validate.addField('#endDate', [
         errorMessage: 'End date is required',
     },
 ]);
+validate.onSuccess((event) => { console.log('Validation passes and form submitted', event); 
+}); 
