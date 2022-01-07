@@ -10,7 +10,7 @@
 }
 
 .gallery-img {
-  width: 150px;
+  width: 200px;
 }
 
 .social-img {
@@ -26,6 +26,7 @@ header {
   justify-content: space-around;
   align-items: center;
   display: flex;
+  flex-flow: row wrap;
 }
 
 #trybe {
@@ -40,25 +41,27 @@ header {
 .textoSecao {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 20px;
 }
 
 .imagens {
   justify-content: center;
-  width: 600px;
+  width: 100%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px;
+  display: flex;;
+  flex-flow: row wrap;
+  padding: 10px;
 }
 
 .logo {
   background-color: snow;
-  margin: 8px;
+  margin: 10px;
   border: 1px solid black;
   border-radius: 4px;
   display: flex;
-  flex-direction:column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
