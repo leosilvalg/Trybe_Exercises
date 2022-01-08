@@ -10,7 +10,7 @@
   }
   
   .header-container {
-    background-color: #5C687C;
+    background-color: black;
     display: flex;
   }
   
@@ -40,6 +40,11 @@
     font-size: 1.3rem;
     list-style: none;
     margin-right: 10px;
+    
+  }
+
+  .menu-container li:hover {
+    opacity: 0.8;
   }
 
   .main-container {
