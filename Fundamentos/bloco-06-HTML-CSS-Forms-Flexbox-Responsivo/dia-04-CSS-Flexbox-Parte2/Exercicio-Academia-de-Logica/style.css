@@ -1,6 +1,6 @@
 *{
   padding: 0%;
-  margin: 10px;
+  margin: 0%;
 }
 
 body{
@@ -8,15 +8,15 @@ body{
   background-color:aquamarine;
 }
 
-main{
+.container{
   display: flex;
   border: black solid 1px;
-  padding: 30px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 80%;
-  margin: 20px auto;
+  width: 90%;
+  margin: 30px auto;
   border-radius: 5px;
+  flex-flow: row wrap;
   
 }
 
@@ -30,9 +30,8 @@ main{
   background-color: black;
   border: black 1px solid;
   margin-bottom: 25px;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  border-radius: 5px;
 }
 
 .header-trybe img{
@@ -40,32 +39,72 @@ main{
   height: 70px;
 }
 
-.form-section {
-  text-align: left;
-  margin: 25px;
-  border: 1px solid black;
+.titulo {
+  margin: 2%;
 }
 
-.hotel-form {
+.hotel-form { 
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+}
+
+form h2 {
+  align-self: flex-start;
+  color: black;
+  flex-wrap: wrap;
+}
+
+form span, form label {
+  color: black;
+}
+
+form button {
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+}
+
+.form-section {
+  margin: 10px 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1%;
+  border-radius: 4px;
 }
 
 .list-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.list-section button {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  width: 50%;
+}
+
 .hotel-form, .list-section{
-  margin: 25px;
   color: rgb(73, 73, 73);
   font-size: 25px;
 }
 
 button{
   width: 30%;
-  padding: 20px;
+  padding: 10px;
   margin-top: 20px;
   font-size: 18px;
 }
@@ -76,13 +115,14 @@ li{
   padding:10px;
   font-size:25px;
   border: black 1px solid;
+  border-radius: 4px;
 }
 
 ol{
   display: inline-block;
   list-style-type: none;
   margin-top:15px;
-  width: 90%;
+  width: 100%;
 }
 
 textarea{
