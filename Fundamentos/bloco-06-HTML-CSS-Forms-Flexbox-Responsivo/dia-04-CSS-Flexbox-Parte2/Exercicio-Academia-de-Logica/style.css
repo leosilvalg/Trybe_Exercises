@@ -17,7 +17,7 @@ body{
   margin: 30px auto;
   border-radius: 5px;
   flex-flow: row wrap;
-  
+  background-color: aliceblue;
 }
 
 .header-trybe{
@@ -26,8 +26,8 @@ body{
   justify-content: center;
   align-items: center;
   height: 100px;
-  color: snow;
-  background-color: black;
+  color: black;
+  background-color: aliceblue;
   border: black 1px solid;
   margin-bottom: 25px;
   width: 90%;
@@ -47,7 +47,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45rem;
   margin: 20px 0;
 }
 
@@ -80,7 +79,6 @@ form button {
   justify-content: space-around;
   flex-flow: row wrap;
   align-items: center;
-  padding: 1%;
   border-radius: 4px;
 }
 
@@ -88,6 +86,7 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 0;
 }
 
 .list-section button {
