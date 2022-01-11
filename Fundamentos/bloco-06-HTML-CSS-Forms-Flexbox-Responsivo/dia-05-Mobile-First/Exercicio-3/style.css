@@ -78,3 +78,62 @@ body {
     padding: 20px;
     height: 1%;
   }
+
+  @media print {
+      #header, #navigation, #footer {
+          display: none;
+      }
+
+      #content {
+          width: 100%;
+      }
+  }
+
+  @media (max-width: 600px) {
+    #aside {
+        display: none;
+    }
+
+
+    body {
+       
+        padding: 0%;
+    }
+
+    #header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 30px;
+    }
+
+    #navigation {
+        margin-top: 75px;
+    }
+
+    #content-container {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #content {
+        width: 90%;
+        margin: auto;
+    }
+
+    #content h2 {
+        margin-bottom: 20px;
+        align-self: center;
+        
+    }
+
+    #content p {
+        text-align: justify;
+    }
+
+}
