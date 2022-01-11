@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (min-width: 360px) {
+    * {
+        margin: 0;
+        padding: 0;
+        line-height: 35px;
+    }
+
+    header {
+        width: 100%;
+        position: fixed;
+        text-align: center;
+        background-color: darkgrey;
+        margin-top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    .aside-one {
+        padding-top: 90px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .aside-one h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .aside-two h2 {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+
+    footer p, footer h3 {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+}
