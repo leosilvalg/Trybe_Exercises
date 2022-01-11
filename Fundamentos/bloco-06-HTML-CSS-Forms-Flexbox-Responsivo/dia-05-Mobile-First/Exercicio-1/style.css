@@ -11,15 +11,18 @@
   }
   
   body {
-  
+    font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 1%;
   }
   
   article {
-  
+    text-align: justify;
   }
   
   h1 {
-  
+    font-size: 1.5em;
+    margin: 10px;
   }
   
   h2 {
@@ -31,17 +34,64 @@
   }
   
   main {
-  
+    display: flex;
+    flex-direction: column;
   }
   
   section {
-  
+    display: flex;
+    flex-flow: row wrap;
   }
   
   figure {
       margin: 0;
+      padding: 1%;
+      text-align: center;
+      border-radius: 5px;
   }
   
   figcaption {
     font-size: .8em;
   }
+
+@media screen and (max-width: 960px) {
+
+     h1, h2 {
+        text-align: center;
+    }
+
+    figure {
+        margin: auto;
+        padding: 3%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    figcaption {
+        font-weight: 600;
+        font-size: .8em;
+      }
+    
+}
+
+@media screen and (min-width: 1550px) {
+
+    h1, h2 {
+       margin: 0%;
+   }
+
+   figure {
+       margin: auto;
+       padding: 1%;
+       text-align: center;
+       justify-content: center;
+       border-radius: 5px;
+   }
+
+   figcaption {
+       font-weight: 600;
+       font-size: .8em;
+     }
+   
+}
