@@ -22,6 +22,18 @@
 
 // Ternário
 
-const fatorial = (n) => n > 1 ? n * fatorial(n - 1) : 1
+// const fatorial = (n) => n > 1 ? n * fatorial(n - 1) : 1
 
-console.log(fatorial(4));
+// console.log(fatorial(4));
+
+/*Crie uma função que receba uma frase e retorne qual a maior palavra.*/
+
+// const maior = (string) => {
+//     let separando = string.split(" ")
+//     let teste = separando.reduce((a, b) => {
+//         return a.length > b.length ? a : b
+//     });
+//     return teste;
+// }
+// console.log(maior('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
