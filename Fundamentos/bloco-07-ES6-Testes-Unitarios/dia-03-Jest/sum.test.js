@@ -11,3 +11,7 @@ test('Retorna a soma de dois numeros', () => {
 test('Dispara um erro caso receba um parametro string', () => {
     expect(() => sum(4, '5')).toThrowError();
 })
+
+test('Dispara um erro caso receba um parametro string', () => {
+    expect(() => sum(4, '5')).toThrowError('parameters must be numbers');
+});
