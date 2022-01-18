@@ -33,21 +33,20 @@
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-const compara = (right, studentAnswer) => {
-  if (right === studentAnswer) return 1;
-  if (studentAnswer === 'N.A') return 0;
-  return -0.5;
-};
-
-const contarPontos = (right, studentAnswer, compara) => {
+const contarPontos = (rightAnswer, studentAnswer) => {
   let contador = 0;
   for (let index = 0; index < right.length; index += 1) {
-    const actionReturn = compara(right[index], studentAnswer[index]);
-    contador += actionReturn
+    if (rightAnswer[index] === studentAnswer[index]) {
+      contador += 1;
+    } else if (studentAnswer[index] === 'N.A') {
+      contador += 0;
+    } else {
+    contador -= 0.5;
+    }
   }
-  return `Resultado: ${contador} pontos`;
+  return contador;
 }
 
-console.log(contarPontos(RIGHT_ANSWERS, STUDENT_ANSWERS, compara));
+const score = (right, student, contarPontos) => contarPontos(right, student);
 
-
+console.log(score(RIGHT_ANSWERS, STUDENT_ANSWERS, contarPontos));
