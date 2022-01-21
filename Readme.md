@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto1_Lessons_Learned)_
+- [x] 3-5: _[Projeto - HTML & CSS](https://github.com/leosilvalg/Lessons-Learned-Trybe-Project)_
 
 ##### Bloco 4: Introdução - JavaScript
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto2_Playground_Functions)_
+- [x] 4-5: _[Projeto - Playground Functions](https://github.com/leosilvalg/Playground-Functions-Trybe-Project)_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,33 +41,33 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [x] 5-3: _JavaScript - Eventos_
 - [x] 5-4: _JavaScript - Web Storage_
-- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto3_Pixel_Art)_
-- [x] 5-6: _[Projeto - Lista de Tarefas](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto4_To_Do_List)_
-- [x] 5-7: _[Projeto Bonus - Adivinhe a Cor](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto5_Color_Guess)_
-- [x] 5-7: _[Projeto Bonus - Gerador de Memes](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto6_Meme_Generator)_
-- [x] 5-7: _[Projeto Bonus - Carta Misteriosa](https://github.com/leosilvalg/Projetos_Trybe/tree/master/Fundamentos/Projeto7_Mistery_Card)_
+- [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/leosilvalg/Pixel-Art-Trybe-Project)_
+- [x] 5-6: _[Projeto - Lista de Tarefas](https://github.com/leosilvalg/To-Do-List-Trybe-Project)_
+- [x] 5-7: _[Projeto Bonus - Adivinhe a Cor](https://github.com/leosilvalg/Color-Guess-Trybe-Project)_
+- [x] 5-7: _[Projeto Bonus - Gerador de Memes](https://github.com/leosilvalg/Meme-Generator-Trybe-Projects)_
+- [x] 5-7: _[Projeto Bonus - Carta Misteriosa](https://github.com/leosilvalg/Mistery-Card-Trybe-Project)_
 
 ##### Bloco 6: HTML & CSS avançado
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [ ] 6-3: _CSS Flexbox - Part 1_
-- [ ] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Tribewarts](https://github.com/leosilvalg/Projeto-Trybewarts-Trybe)_
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-4: _CSS Flexbox - Part 2_
+- [x] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-6: _[Projeto - Tribewarts](https://github.com/leosilvalg/Projeto-Trybewarts-Trybe)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-2: _JavaScript ES6 - Objects_
+- [x] 7-3: _Testes unitários em JavaScript_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
 ##### Bloco 8: JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [ ] 8-5: _[Projeto - Zoo functions]()_
 
