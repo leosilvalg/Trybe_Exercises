@@ -39,6 +39,6 @@ function mapCities () {
     });
     }                                                     
   });
-  console.log(retorno);
+  console.table(retorno);
 }
 mapCities();
