@@ -19,22 +19,26 @@
 
 const {regions, states, cities} = require('./data');
 
-function mapCities () {
-
-  const retorno = {};
-  regions.forEach((regiao) => {
-    if (filtraCidade(regiao.short).length > 0) {
-    retorno[regiao.short] = filtraCidade(regiao.short);
-    }                                                     // Primeira etapa. Criação do objeto com as regiões e arrays;
-  });
-  console.log(retorno);
-}
-mapCities();
-
 function qualEstado (sigla) {
-  return states.find((state) => state.short === sigla); // Segunda etapa. Captura apenas o nome do estado;
-}
+  return states.find((state) => state.short === sigla);
+}                                                             // Segunda etapa. Captura apenas o nome do estado;
 
 function filtraCidade (sigla) {
   return cities.filter((cidedade) => cidedade.region === sigla);
 }
+
+function mapCities () {
+  const retorno = {};
+  regions.forEach((regiao) => {
+    if (filtraCidade(regiao.short).length > 0) {
+    retorno[regiao.short] = filtraCidade(regiao.short).map((cidade) => {
+      return {
+        city: cidade.name,
+        state: qualEstado(cidade.state).name
+      }
+    });
+    }                                                     
+  });
+  console.log(retorno);
+}
+mapCities();
