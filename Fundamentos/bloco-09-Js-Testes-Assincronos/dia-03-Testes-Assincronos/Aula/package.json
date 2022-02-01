@@ -13,6 +13,7 @@
     "jest": "^27.4.7"
   },
   "dependencies": {
+    "@types/jest": "^27.4.0",
     "node-fetch": "^2.6.7"
   }
 }
