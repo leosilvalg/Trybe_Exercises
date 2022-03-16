@@ -87,29 +87,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _Introdução - React_
 - [x] 10-1: _'Hello, world!' no React_
 - [x] 10-2: _Componentes_
-- [ ] 10-3: _[Projeto - Sistema Solar]()_
+- [x] 10-3: _[Projeto - Sistema Solar]()_
 
 ##### Bloco 11: React
 
-- [ ] 111-1: _Components com estado_
-- [ ] 11-2: _Eventos e formulários no React_
-- [ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 111-1: _Components com estado_
+- [x] 11-2: _Eventos e formulários no React_
+- [x] 11-3: _[Projeto - Movie Cards Library Stateful]()_
 
 ##### Bloco 12: React
 
-- [ ] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 12-2: _Ciclo de vida de componentes em React_
-- [ ] 12-3: _React Router_
-- [ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [x] 12-2: _Ciclo de vida de componentes em React_
+- [x] 12-3: _React Router_
+- [x] 12-4: _[Projeto - Movie Cards Library CRUD]()_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+- [x] 13-1: _Metodologias Ágeis_
+- [x] 13-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 14: Testes em React
 
-- [ ] 14-1: _Testando React com a React Testing Library_
+- [x] 14-1: _Testando React com a React Testing Library(https://github.com/leosilvalg/exercise-todo-list)_
 - [ ] 14-2: _Testando React com a React Testing Library - Parte 2_
 - [ ] 14-3: _[Projeto - Testes em React]()_
 
