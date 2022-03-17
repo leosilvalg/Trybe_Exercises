@@ -61,7 +61,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Primeiros passos em Jest_
-- [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/leosilvalg/Projeto_Jest)_
 
 ##### Bloco 8: JavaScript ES6
 
@@ -70,14 +70,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [x] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions](https://github.com/leosilvalg/Projeto_Zoo_Functions)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [x] 9-2: _JavaScript Assíncrono - FetchAPI e async/await_
 - [x] 9-3: _Jest - Testes Assíncronos_
-- [x] 9-4: _[Projeto - Carrinho de Compras]()_
+- [x] 9-4: _[Projeto - Carrinho de Compras](https://github.com/leosilvalg/Projeto_ShoppingCart)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
@@ -87,20 +87,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _Introdução - React_
 - [x] 10-1: _'Hello, world!' no React_
 - [x] 10-2: _Componentes_
-- [x] 10-3: _[Projeto - Sistema Solar]()_
+- [x] 10-3: _[Projeto - Sistema Solar](https://github.com/leosilvalg/Projeto_Solar_System)_
 
 ##### Bloco 11: React
 
-- [x] 111-1: _Components com estado_
+- [x] 11-1: _Components com estado_
 - [x] 11-2: _Eventos e formulários no React_
-- [x] 11-3: _[Projeto - Movie Cards Library Stateful]()_
+- [x] 11-3: _[Projeto - Tryunfo](https://github.com/leosilvalg/Projeto_Tryunfo)_
 
 ##### Bloco 12: React
 
 - [x] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_
 - [x] 12-2: _Ciclo de vida de componentes em React_
 - [x] 12-3: _React Router_
-- [x] 12-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 12-4: _[Projeto - Trybetunes](https://github.com/leosilvalg/Projeto_Trybetunes)_
 
 ##### Bloco 13: Metodologias Ágeis
 
